@@ -1,5 +1,4 @@
-# XY-INC
-Project POI (Position of Interest)
+# xy-inc
 
 **1. PRÉ-REQUISITOS**<br/>
 
@@ -19,8 +18,9 @@ sudo apt-get install mysql-server-5.7
 sudo apt-get install mysql-workbench
 
 ```
-
 <br/>
+Baixar e executar script com o nome de schema.sql.<br/>
+Ele irá criar a tabela POI para realizar o armazenamento das informações.<br/>
 
 **2. ARQUITETURA PROPOSTA**<br/>
 A arquitetura proposta é composta de três camadas principais:
@@ -35,11 +35,12 @@ A arquitetura proposta é composta de três camadas principais:
 <br/>
 
 **3. CONFIGURAÇÕES**<br/>
-Para instalar o servidor de aplicação **wildfly** será necessário baixar a versão **10.1.0.Final** do servidor e descompactar em um local de sua preferência. Logo após, seguir os passos abaixo para configuração do servidor.
+Para instalar o servidor de aplicação **wildfly** será necessário baixar a versão **10.1.0.Final** do servidor e descompactar em um local de sua preferência. <br/>
+Logo após, seguir os passos abaixo para configuração do servidor.<br/>
 
-**3.1. Instalar Driver MySql no servidor Wildfly**
-Acesse o diretório $WILDFLY_HOME/modules/system/layers/base/com
-Crie o diretório **mysql** e seu subdiretório **main**
+**3.1. Instalar Driver MySql no servidor Wildfly**<br/>
+Acesse o diretório $WILDFLY_HOME/modules/system/layers/base/com<br/>
+Crie o diretório **mysql** e seu subdiretório **main**<br/>
 Dentro da pasta **main** baixe e extraia o jar de conexão do mysql. **mysql-connector-java-5.1.39-bin.jar**  `https://downloads.mysql.com/archives/c-j/` <br/>
 Crie um arquivo chamado module.xml e dentro dele adicione as seguintes linhas <br/>
 ```
@@ -94,11 +95,11 @@ Abra o arquivo **JBOSS_HOME/standalone/configuration/standalone.xml** para ediç
 **4. BUILD E DEPLOY**
 
 **4.1. Build**
-Dentro da pasta xy-inc, execute:
-mvn clean install
+Dentro da pasta xy-inc, execute:<br/>
+mvn clean install<br/>
 
 **4.2. Deploy**
-Copiar o arquivo _**xy-inc/xy-inc-ear/target/xy-inc-ear-1.0.0.ear**_ para a pasta **_JBOSS_HOME\standalone\deployments_**
+Copiar o arquivo _**xy-inc/xy-inc-ear/target/xy-inc-ear-1.0.0.ear**_ para a pasta **_JBOSS_HOME\standalone\deployments_**<br/>
 
 **4.3. Start Server**<br/>
 Para subir o servidor de aplicações Wildfly será necessário entrar na pasta JBOSS_HOME\bin e executar o seguinte comando:<br/>
@@ -106,9 +107,9 @@ No Linux: standalone.sh<br/>
 
 <br/>
 **5 TESTES**<br/>
-Testar aplicação na url `http://localhost:8080/xy-inc-apiRest/`
 
 Testar recursos REST nas seguintes urls:  <br/>
+
 GET `http://localhost:8080/xy-inc-apiRest/service/pois` 				- Lista todos os POI <br/>
 GET `http://localhost:8080/xy-inc-apiRest/service/pois/{x}/{y}/{range}` - Busca POI no raio informado<br/>
 POST `http://localhost:8080/xy-inc-apiRest/service/pois` 				- Cria um novo POI
