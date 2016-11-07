@@ -1,0 +1,7 @@
+br/com/xyinc/persistence/dao/impl/GenericDAO.class
+br/com/xyinc/business/facade/IPoiFacade.class
+br/com/xyinc/persistence/dao/impl/PoiDAO.class
+br/com/xyinc/persistence/dao/impl/PoiFacade.class
+br/com/persistence/model/Poi.class
+br/com/xyinc/persistence/dao/IGenericDAO.class
+br/com/xyinc/persistence/dao/IPoiDAO.class

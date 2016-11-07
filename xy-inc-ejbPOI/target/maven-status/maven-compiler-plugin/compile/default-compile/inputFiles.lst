@@ -1,0 +1,7 @@
+/opt/dev/workspace/workspaceMars/xy-inc/xy-inc-ejbPOI/src/main/java/br/com/xyinc/persistence/dao/IGenericDAO.java
+/opt/dev/workspace/workspaceMars/xy-inc/xy-inc-ejbPOI/src/main/java/br/com/xyinc/persistence/dao/impl/GenericDAO.java
+/opt/dev/workspace/workspaceMars/xy-inc/xy-inc-ejbPOI/src/main/java/br/com/xyinc/persistence/dao/IPoiDAO.java
+/opt/dev/workspace/workspaceMars/xy-inc/xy-inc-ejbPOI/src/main/java/br/com/xyinc/business/facade/IPoiFacade.java
+/opt/dev/workspace/workspaceMars/xy-inc/xy-inc-ejbPOI/src/main/java/br/com/xyinc/persistence/dao/impl/PoiDAO.java
+/opt/dev/workspace/workspaceMars/xy-inc/xy-inc-ejbPOI/src/main/java/br/com/xyinc/persistence/dao/impl/PoiFacade.java
+/opt/dev/workspace/workspaceMars/xy-inc/xy-inc-ejbPOI/src/main/java/br/com/persistence/model/Poi.java
