@@ -6,7 +6,7 @@ Será demonstrado a execução/configuração do projeto apenas no ambiente Linu
 
 Ferramentas necessárias para realizar os testes!
 
-JDK 8: http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk7-downloads-1880260.html<br/>
+JDK 8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html<br/>
 Wildfly-10.1.0.Final: http://wildfly.org/downloads/<br/>
 Maven: http://maven.apache.org/download.cgi<br/>
 Banco de dados mysql e seu cliente de consultas<br/>
@@ -19,7 +19,10 @@ sudo apt-get install mysql-workbench
 
 ```
 <br/>
-Baixar e executar script com o nome de schema.sql.<br/>
+Crie no mysql-workbench um schema com o nome de XY-INC<br/>
+
+Logo após, baixe e execute o script com o nome de schema.sql<br/>
+
 Ele irá criar a tabela POI para realizar o armazenamento das informações.<br/>
 
 **2. ARQUITETURA PROPOSTA**<br/>
