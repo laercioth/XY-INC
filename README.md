@@ -103,7 +103,7 @@ Copiar o arquivo _**xy-inc/xy-inc-ear/target/xy-inc-ear-1.0.0.ear**_ para a past
 
 **4.3. Start Server**<br/>
 Para subir o servidor de aplicações Wildfly será necessário entrar na pasta JBOSS_HOME\bin e executar o seguinte comando:<br/>
-No Linux: standalone.sh<br/>
+No Linux: ./standalone.sh<br/>
 
 <br/>
 **5 TESTES**<br/>
